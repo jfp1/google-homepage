@@ -112,7 +112,6 @@
             }
             
             .secondary_bar_container {
-                
                 display:flex;
                 justify-content: space-evenly;
                 margin-left: auto;
@@ -130,6 +129,7 @@
                 text-align: center;
                 padding-top: 10px;
                 border-radius: 5px;
+                min-width:fit-content;
             }
             .google_search_button:hover {
                 box-shadow: 0 0px 2px rgba(0,0,0,0.2)
@@ -143,23 +143,74 @@
                 text-align: center;
                 padding-top: 10px;
                 border-radius: 5px;
-
+                min-width:fit-content;
             }
             .feeling_lucky_button:hover {
                 box-shadow: 0 0px 2px rgba(0,0,0,0.2)
             }
             .google_offered {
-                background-color:lightseagreen;
+                
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                height: 40px;
+                text-align: center;
+                padding-top: 20px;
+                font-family: arial,sans-serif;
+                font-size: 13px;
+            }
+
+            .footer_1 {
+                position: fixed;
+                bottom: 40px;
+                left:0;
+                width:100%;
+                height: 50px;
+                background-color: #e2e0e08a; 
+                border-bottom: solid;
+                border-width: 1px;
+                border-color: rgb(199, 199, 199);
+            }
+            .polska {
+                color:#0000008A;
+                display: inline-block;
+                margin-top: 15px;
+                margin-left: 15px;
+                font-family: arial,sans-serif;
+            }
+            .footer_2_container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                height: 40px;
+                background-color: #e2e0e08a; 
+            }
+            .left_side {
+                color:#0000008A;
+                margin-top: 10px;
+                margin-left: 15px;
+                font-family: arial,sans-serif;
                 
             }
-            .footer {
-                background-color:magenta;
-               
+            .center {
+                color:#0000008A;
+                margin-top: 10px;
+                margin-right:300px;
+                font-family: arial,sans-serif;
             }
-
+            .right_side {
+                color:#0000008A;
+                margin-top: 0px;
+                margin-right: 10px;
+                font-family: arial,sans-serif;
+            }
         </style>
         </head>
-
+            <body>
             <div class="nav_bar">
                 <a href="#" class="gmail_copy">Gmail</a>
                 <a href="#" class="images">Images</a>
@@ -178,9 +229,29 @@
             <div class="secondary_bar_container">
                 <div class="google_search_button"><span>Google Search</span></div>
                 <div class="feeling_lucky_button">I'm feeling lucky</div>
-            </div>    
-            <p class="google_offered"> Google offering</p>
-            <p class="footer" >This is footer</p>
-        </body>
+            </div>
+            <div class="google_offered">
+                <span>Google offered in:</span>
+                <a href="#">polski</a>
+            </div>
+            <div class="footer_1"><span class="polska">Polska</span></div>
+            <div class="footer_2_container">
+                <div>
+                    <span class="left_side">O nas</span>
+                    <span class="left_side">Reklamuj sie</span>
+                    <span class="left_side">Dla firm</span>
+                    <span class="left_side">Jak dziala wyszukiwarka</span>
+                </div>
+                <div>
+                    <span class="center">Neutralność węglowa od 2007 roku</span>
+                </div>
+                <div>
+                    <span class="right_side">O nas</span>
+                    <span class="right_side">O nas</span>
+                    <span class="right_side">O nas</span>
+                </div>
+            </div>
 
+        
+        </body>
     </html>
